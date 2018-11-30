@@ -2,7 +2,7 @@ var moviesDiv = document.querySelector('#Movies')
 var currentDate = new Date();
 var currentMonth = currentDate.getMonth()  + 1;
 
-if (currentMonth <= 6) {
+if (currentMonth >= 7) {
   moviesDiv.innerHTML = `
     <ul>
       <li><a href ="toy.html">Small Soldiers</a></li>
@@ -13,7 +13,7 @@ if (currentMonth <= 6) {
    </ul>
   `
 
-} else if (currentMonth >= 7) {
+} else if (currentMonth <= 6) {
   moviesDiv.innerHTML = `
   <ul>
     <li><a href ="rubber.html">Rubber</a></li>
